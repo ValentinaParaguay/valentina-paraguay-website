@@ -266,7 +266,7 @@ select, input, textarea { font-family: var(--font-body); }
   position: absolute;
   inset: 0;
   background:
-    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1600&q=80') center/cover no-repeat;
   background-color: var(--navy);
 }
 
@@ -453,7 +453,7 @@ select, input, textarea { font-family: var(--font-body); }
    ============================================================ */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 28px;
   align-items: start;
 }
@@ -659,16 +659,14 @@ select, input, textarea { font-family: var(--font-body); }
   position: relative;
 }
 
-.about-image-placeholder {
+.about-photo {
+  width: 100%;
   aspect-ratio: 3/4;
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 100%);
+  object-fit: cover;
+  object-position: top center;
   border-radius: var(--radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6rem;
-  color: rgba(184, 150, 90, 0.3);
   border: 2px solid var(--gold);
+  display: block;
 }
 
 .about-badge-float {
@@ -792,6 +790,62 @@ select, input, textarea { font-family: var(--font-body); }
   line-height: 1.9;
   padding-right: 40px;
 }
+
+/* ============================================================
+   LLEGÁS A PARAGUAY (nueva sección)
+   ============================================================ */
+.section-llegada { background: var(--navy); color: var(--white); }
+
+.llegada-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.llegada-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.25;
+  margin-bottom: 48px;
+}
+.llegada-title em { color: var(--gold); font-style: italic; }
+
+.llegada-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.llegada-body p {
+  font-size: 1.02rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.9;
+}
+
+.llegada-highlight {
+  background: rgba(184, 150, 90, 0.1);
+  border-left: 3px solid var(--gold);
+  padding: 20px 28px;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+
+.llegada-highlight p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 500;
+}
+
+.llegada-price {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--gold-light) !important;
+}
+
+.llegada-cta { text-align: center; }
 
 /* ============================================================
    CONTACTO
@@ -1142,7 +1196,7 @@ select, input, textarea { font-family: var(--font-body); }
   :root { --section-pad: 72px; }
 
   .reasons-grid { grid-template-columns: repeat(2, 1fr); }
-  .services-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
   .categories-grid { grid-template-columns: repeat(2, 1fr); }
 
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -1205,6 +1259,7 @@ select, input, textarea { font-family: var(--font-body); }
   .stat-divider { width: 100%; height: 1px; }
 
   .reasons-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
   .categories-grid { grid-template-columns: 1fr; }
   .category-card { aspect-ratio: 4/3; }
 
