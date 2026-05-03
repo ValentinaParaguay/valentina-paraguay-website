@@ -3,643 +3,734 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valentina Paraguay – Una sola conexión. Todo Paraguay.</title>
-  <meta name="description" content="Valentina Paraguay: inversiones inmobiliarias, estructura patrimonial y fiscal, y hoja de ruta en Paraguay. 10% de impuesto flat, 0% sobre ingresos extranjeros, 100% propiedad extranjera permitida." />
-  <meta name="keywords" content="inversiones Paraguay, inmobiliario Paraguay, estructura patrimonial Paraguay, residencia Paraguay, consultoría Paraguay" />
-  <meta name="author" content="Valentina Paraguay" />
+  <title>Valentina Paraguay — Residencia, Empresa e Inversión Inmobiliaria en Paraguay</title>
+  <meta name="description" content="Asesoría premium para inversores extranjeros en Paraguay. Residencia fiscal, empresa EAS, inversión inmobiliaria. Una sola conexión. Todo Paraguay." />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Valentina Paraguay – Una sola conexión. Todo Paraguay." />
-  <meta property="og:description" content="Inversiones inmobiliarias, estructura patrimonial y fiscal, y hoja de ruta en Paraguay. 10% impuesto flat, 0% sobre ingresos extranjeros." />
+  <meta property="og:title" content="Valentina Paraguay — Una sola conexión. Todo Paraguay." />
+  <meta property="og:description" content="Residencia, empresa e inversión inmobiliaria en Paraguay para europeos, argentinos y brasileros." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://valentinaparaguay.com" />
-  <meta property="og:locale" content="es_PY" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Valentina Paraguay" />
-  <meta name="twitter:description" content="Una sola conexión. Todo Paraguay." />
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://valentinaparaguay.com" />
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "LocalBusiness",
     "name": "Valentina Paraguay",
-    "description": "Inversiones inmobiliarias, estructura patrimonial y fiscal, y hoja de ruta en Paraguay. 10% impuesto flat, 0% sobre ingresos extranjeros.",
+    "description": "Asesoría premium para inversores extranjeros en Paraguay. Residencia fiscal, empresa EAS e inversión inmobiliaria.",
     "url": "https://valentinaparaguay.com",
     "telephone": "+595994763352",
     "email": "info@valentinaparaguay.com",
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Asunción",
       "addressCountry": "PY"
     },
-    "serviceArea": {
-      "@type": "Country",
-      "name": "Paraguay"
-    }
+    "areaServed": ["PY", "ES", "AR", "BR", "IT", "FR"],
+    "priceRange": "USD 50 - USD 4500"
   }
   </script>
 </head>
 <body>
 
-  <!-- ===================== NAVIGATION ===================== -->
-  <header class="site-header" id="site-header">
-    <nav class="nav-container">
-      <a href="#inicio" class="nav-logo">
-        <span class="logo-text">Valentina Paraguay</span>
-        <span class="logo-tagline">Una sola conexión. Todo Paraguay.</span>
-      </a>
+  <!-- BANNER TOP -->
+  <div class="banner-top">
+    <div class="container">
+      <span>⚡ Solo 3 cupos disponibles este mes para consultoría privada — <a href="#calendly">Agendar ahora</a></span>
+    </div>
+  </div>
 
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">Valentina Paraguay</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#webinars">Webinars</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#faq">FAQ</a>
+        <a href="#calendly">Contacto</a>
+        <a href="#calendly" class="btn btn-primary btn-sm nav-cta">Agendar llamada</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
-
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#inicio" class="nav-link">Inicio</a></li>
-        <li><a href="#por-que-paraguay" class="nav-link">Por qué Paraguay</a></li>
-        <li><a href="#servicios" class="nav-link">Servicios</a></li>
-        <li><a href="#inversiones" class="nav-link">Inversiones</a></li>
-        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-        <li><a href="#faq" class="nav-link">FAQ</a></li>
-        <li><a href="https://wa.me/595994763352?text=Hola%20Valentina%2C%20quiero%20mi%20hoja%20de%20ruta%20en%20Paraguay." class="nav-link nav-cta" target="_blank" rel="noopener">Contactar</a></li>
-      </ul>
-    </nav>
+    </div>
   </header>
 
-  <!-- ===================== HERO ===================== -->
+  <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="hero-bg">
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Consultoría Exclusiva · Paraguay</p>
-      <h1 class="hero-headline">
-        Una sola conexión.<br />
-        <em>Todo Paraguay.</em>
-      </h1>
-      <p class="hero-sub">
-        Inversiones inmobiliarias, estructura patrimonial y fiscal, y hoja de ruta personalizada para establecerse con éxito en Paraguay.
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge badge-light">🇵🇾 La conexión que necesitás en Paraguay</span>
+      <h1 class="hero-title">Una sola conexión.<br/>Todo Paraguay.</h1>
+      <p class="hero-subtitle">
+        Residencia · Empresa · Inversión inmobiliaria<br/>
+        Gestionado de principio a fin, desde donde estés.
       </p>
-
-      <div class="hero-actions">
-        <a href="#servicios" class="btn btn-primary">Explorar servicios</a>
-        <a href="https://wa.me/595994763352?text=Hola%20Valentina%2C%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios." class="btn btn-outline" target="_blank" rel="noopener">
-          <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
-        </a>
+      <div class="hero-buttons">
+        <a href="#calendly" class="btn btn-primary">Agendar consultoría gratuita</a>
+        <a href="#servicios" class="btn btn-outline-light">Ver servicios</a>
       </div>
       <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number">0%</span>
-          <span class="stat-label">Impuesto sobre ganancias extranjeras</span>
+        <div class="stat">
+          <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+          <div class="stat-label">propiedad extranjera permitida</div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">10%</span>
-          <span class="stat-label">Impuesto a la renta (flat rate)</span>
+        <div class="stat">
+          <div class="stat-number"><span class="counter" data-target="10">0</span>%</div>
+          <div class="stat-label">impuesto a la renta</div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Propiedad extranjera permitida sin restricciones</span>
+        <div class="stat">
+          <div class="stat-number">+<span class="counter" data-target="10">0</span>%</div>
+          <div class="stat-label">rentabilidad anual estimada</div>
         </div>
       </div>
     </div>
-    <a href="#por-que-paraguay" class="hero-scroll" aria-label="Scroll hacia abajo">
-      <span class="scroll-line"></span>
-      <i class="fas fa-chevron-down"></i>
-    </a>
   </section>
 
-  <!-- ===================== POR QUÉ PARAGUAY ===================== -->
-  <section class="section section-light" id="por-que-paraguay">
+  <!-- LISTA PRIVADA -->
+  <section class="section section-soft">
+    <div class="container narrow">
+      <div class="section-head center reveal">
+        <span class="badge">INFO PRIVILEGIADA</span>
+        <h2>Antes de que salga al mercado,<br/>mis clientes ya lo saben.</h2>
+        <p class="lead">
+          Sumate a mi lista privada y recibí oportunidades de inversión, proyectos off-market y novedades del mercado paraguayo antes que nadie.
+        </p>
+      </div>
+
+      <form class="card form-card reveal" onsubmit="event.preventDefault(); alert('¡Gracias! Te sumamos a la lista privada.');">
+        <div class="form-grid">
+          <div class="form-field">
+            <label>Nombre completo</label>
+            <input type="text" required placeholder="Tu nombre" />
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-field">
+            <label>País</label>
+            <select required>
+              <option value="">Elegí tu país</option>
+              <option>España</option>
+              <option>Argentina</option>
+              <option>Brasil</option>
+              <option>Italia</option>
+              <option>Francia</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sumarme a la lista privada →</button>
+        <p class="form-note">Sin spam. Solo info de valor para inversores serios.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">La oportunidad</p>
-        <h2 class="section-title">Por qué Paraguay</h2>
-        <p class="section-subtitle">Un país con fiscalidad territorial, crecimiento sostenido y puertas abiertas para el inversor global.</p>
+      <div class="section-head center reveal">
+        <span class="badge">CÓMO PUEDO AYUDARTE</span>
+        <h2>Tres caminos.<br/>Un solo destino: Paraguay.</h2>
+        <p class="lead">
+          Elegí por dónde empezar según tu situación. Si no sabés cuál es el tuyo, empezá por la consultoría.
+        </p>
       </div>
 
-      <div class="reasons-grid">
-        <div class="reason-card fade-in">
-          <div class="reason-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>Fiscalidad Territorial</h3>
-          <p>Solo tributa lo que genera dentro de Paraguay. Sus rentas extranjeras quedan completamente exentas de impuestos locales.</p>
+      <!-- SERVICIO 1: CONSULTORÍA -->
+      <article class="service-card service-1 reveal">
+        <span class="badge badge-accent">EMPEZÁ ACÁ</span>
+        <h3 class="service-title">¿Paraguay es para mí?</h3>
+        <p class="service-sub">Consultoría privada · 30 minutos · USD 50</p>
+
+        <p>Antes de gastar un peso, necesitás saber si Paraguay realmente te conviene.</p>
+        <p>No todos deberían venir. No todos deberían hacerlo de la misma forma. En 30 minutos analizamos tu situación específica: de dónde venís, qué buscás, cuánto tenés para invertir y qué estructura te conviene más.</p>
+        <p><strong>Al final de la llamada sabés exactamente si Paraguay es tu próximo paso — y cómo darlo.</strong></p>
+
+        <ul class="check-list">
+          <li>Evaluación personal de tu situación fiscal y financiera</li>
+          <li>Recomendación concreta de qué estructura te conviene (empresa, residencia o ambas)</li>
+          <li>Mapa de próximos pasos personalizado</li>
+          <li>Acceso a precios <em>friends &amp; family</em> de desarrolladores</li>
+          <li>30 días de seguimiento por WhatsApp incluidos</li>
+        </ul>
+
+        <div class="price-block">
+          <div class="price">USD 50</div>
+          <div class="price-detail">/ 30 minutos</div>
         </div>
-        <div class="reason-card fade-in">
-          <div class="reason-icon">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h3>Crecimiento Sostenido</h3>
-          <p>Crecimiento del PIB sostenido en las últimas décadas. Una de las economías con mayor estabilidad macroeconómica y menor inflación de la región.</p>
-        </div>
-        <div class="reason-card fade-in">
-          <div class="reason-icon">
-            <i class="fas fa-dollar-sign"></i>
-          </div>
-          <h3>Economía Dolarizada</h3>
-          <p>Sin control de cambios. Libre circulación de divisas y contratos en USD sin restricciones gubernamentales.</p>
-        </div>
-        <div class="reason-card fade-in">
-          <div class="reason-icon">
-            <i class="fas fa-home"></i>
-          </div>
-          <h3>Mercado Inmobiliario</h3>
-          <p>Precios por metro cuadrado muy por debajo de Buenos Aires, Montevideo o São Paulo con yields muy superiores.</p>
-        </div>
-        <div class="reason-card fade-in">
-          <div class="reason-icon">
-            <i class="fas fa-passport"></i>
-          </div>
-          <h3>Residencia Ágil</h3>
-          <p>Proceso de residencia permanente sencillo, con opción a ciudadanía en tres años y pasaporte con acceso a múltiples destinos.</p>
-        </div>
-        <div class="reason-card fade-in">
-          <div class="reason-icon">
-            <i class="fas fa-leaf"></i>
-          </div>
-          <h3>Calidad de Vida</h3>
-          <p>Costo de vida bajo, gastronomía, seguridad, naturaleza exuberante y una comunidad expatriada en crecimiento exponencial.</p>
-        </div>
-      </div>
+
+        <p class="service-note"><em>Si después de la llamada decidís avanzar con empresa, residencia o paquete completo, los USD 50 se descuentan del total. Literalmente no tiene costo.</em></p>
+
+        <a href="#calendly" class="btn btn-primary btn-block btn-lg">Quiero mi consultoría →</a>
+      </article>
     </div>
   </section>
 
-  <!-- ===================== SERVICIOS ===================== -->
-  <section class="section section-dark" id="servicios">
+  <!-- SERVICIO 2 -->
+  <section class="section section-soft">
     <div class="container">
-      <div class="section-header section-header-light">
-        <p class="section-eyebrow section-eyebrow-gold">Lo que ofrezco</p>
-        <h2 class="section-title">Servicios</h2>
-        <p class="section-subtitle">Todo lo que necesitás para establecerte e invertir en Paraguay, con alguien que ya está adentro del mercado.</p>
+      <div class="section-head center reveal">
+        <span class="badge">YA SÉ LO QUE QUIERO</span>
+        <h2>Necesito solo una cosa.<br/>La hago bien.</h2>
+        <p class="lead">Para quien ya sabe lo que necesita y quiere ir directo al grano.</p>
       </div>
 
-      <div class="services-grid">
-        <!-- Servicio 1 -->
-        <div class="service-card service-card-featured fade-in">
-          <div class="service-badge">Más solicitado · USD 500</div>
-          <div class="service-number">01</div>
-          <div class="service-icon-wrap">
-            <i class="fas fa-map-marked-alt"></i>
-          </div>
-          <h3 class="service-title">Tu Hoja de Ruta en Paraguay</h3>
-          <p class="service-desc">Un plan personalizado, paso a paso, para que llegues a Paraguay con todo resuelto desde el primer día. Sin improvisar, sin perder tiempo.</p>
-          <ul class="service-list">
-            <li><i class="fas fa-check"></i> Alojamiento ejecutivo con Corporate Stays</li>
-            <li><i class="fas fa-check"></i> Residencia fiscal, empresa y cuenta bancaria</li>
-            <li><i class="fas fa-check"></i> Red de abogados y contadores de primer nivel</li>
-            <li><i class="fas fa-check"></i> Recorrido de zonas y proyectos del mercado</li>
-          </ul>
-          <a href="https://wa.me/595994763352?text=Hola%20Valentina%2C%20quiero%20mi%20Hoja%20de%20Ruta%20en%20Paraguay." class="service-link" target="_blank" rel="noopener">Quiero mi hoja de ruta <i class="fas fa-arrow-right"></i></a>
-        </div>
+      <div class="grid-2">
+        <!-- CARD A: EAS -->
+        <article class="card service-detail reveal">
+          <span class="badge badge-accent">EAS · EMPRESA</span>
+          <h3>Tu empresa paraguaya lista en 10 días.</h3>
+          <p>La EAS (Empresa por Acciones Simplificada) es la LLC paraguaya. 100% tuya. Sin capital mínimo. Sin socios locales obligatorios. Sin burocracia innecesaria.</p>
+          <p>Ideal si operás online, facturás al exterior o querés una estructura legal eficiente con impuesto del 10%.</p>
+          <p><strong>Vos me decís que sí. Yo coordino abogados, gestores y contadores. En 10 días tenés RUC activo y empresa funcionando.</strong></p>
 
-        <!-- Servicio 2 -->
-        <div class="service-card fade-in">
-          <div class="service-number">02</div>
-          <div class="service-icon-wrap">
-            <i class="fas fa-building"></i>
-          </div>
-          <h3 class="service-title">Inversiones Inmobiliarias</h3>
-          <p class="service-desc">No busco propiedades en portales. Tengo acceso directo a una red de desarrolladores que me muestran sus proyectos antes de que salgan al mercado. Departamentos en pozo, unidades para renta, terrenos estratégicos y desarrollos completos — todo filtrado, con números reales y rentabilidad verificada. Mis clientes no eligen entre lo que hay. Eligen entre lo mejor que existe.</p>
-          <ul class="service-list">
-            <li><i class="fas fa-check"></i> Acceso a proyectos antes de salida al mercado</li>
-            <li><i class="fas fa-check"></i> Due diligence y verificación de rentabilidad</li>
-            <li><i class="fas fa-check"></i> Negociación a precio friends &amp; family</li>
-            <li><i class="fas fa-check"></i> Gestión de renta, amoblamiento y Airbnb</li>
+          <ul class="check-list">
+            <li>Constitución EAS completa</li>
+            <li>Estatutos personalizados</li>
+            <li>Inscripción MIC / SUACE</li>
+            <li>RUC activo (DNIT)</li>
+            <li>Identidad Electrónica</li>
+            <li>Todas las tasas y aranceles incluidos</li>
+            <li>Todo listo en ~10 días</li>
           </ul>
-          <a href="#contacto" class="service-link">Consultar <i class="fas fa-arrow-right"></i></a>
-        </div>
 
-        <!-- Servicio 3 -->
-        <div class="service-card fade-in">
-          <div class="service-number">03</div>
-          <div class="service-icon-wrap">
-            <i class="fas fa-balance-scale"></i>
+          <div class="addon recommended">
+            <strong>+ USD 120/mes</strong> · Contador asignado + contabilidad mensual + IVA + declaración anual
+            <span class="recommended-tag">Recomendado</span>
           </div>
-          <h3 class="service-title">Estructura Patrimonial y Fiscal</h3>
-          <p class="service-desc">Diseño la estructura legal y fiscal óptima para proteger y hacer crecer tu patrimonio aprovechando el sistema tributario territorial de Paraguay.</p>
-          <ul class="service-list">
-            <li><i class="fas fa-check"></i> Planificación fiscal internacional</li>
-            <li><i class="fas fa-check"></i> Creación de sociedades y holdings</li>
-            <li><i class="fas fa-check"></i> Protección patrimonial</li>
-            <li><i class="fas fa-check"></i> Cumplimiento regulatorio</li>
-          </ul>
-          <a href="#contacto" class="service-link">Consultar <i class="fas fa-arrow-right"></i></a>
-        </div>
 
-        <!-- Servicio 4 -->
-        <div class="service-card fade-in">
-          <div class="service-number">04</div>
-          <div class="service-icon-wrap">
-            <i class="fas fa-concierge-bell"></i>
+          <div class="comparison">
+            <div class="comp-line strike">Solo en tasas + abogado sin contactos: <strong>~USD 2.500</strong> · 2–3 meses</div>
+            <div class="comp-line good">Con Valentina: <strong>USD 1.600</strong> · 10 días ✓</div>
           </div>
-          <h3 class="service-title">Alojamiento con Corporate Stays</h3>
-          <p class="service-desc">Departamentos ejecutivos amoblados en las mejores zonas de Asunción, con tarifas preferenciales exclusivas para mis clientes. Llegás y ya tenés todo listo.</p>
-          <ul class="service-list">
-            <li><i class="fas fa-check"></i> Departamentos premium totalmente equipados</li>
-            <li><i class="fas fa-check"></i> Zonas estratégicas de Asunción</li>
-            <li><i class="fas fa-check"></i> Tarifas exclusivas solo para clientes</li>
-            <li><i class="fas fa-check"></i> Disponible desde el primer día de llegada</li>
-          </ul>
-          <a href="https://wa.me/595994763352?text=Hola%20Valentina%2C%20quiero%20información%20sobre%20el%20alojamiento%20con%20Corporate%20Stays." class="service-link" target="_blank" rel="noopener">Consultar disponibilidad <i class="fas fa-arrow-right"></i></a>
-        </div>
+
+          <div class="price-block">
+            <div class="price">USD 1.600</div>
+          </div>
+          <p class="service-note">50% al confirmar · 50% al recibir RUC activo</p>
+
+          <a href="#calendly" class="btn btn-outline btn-block">Quiero mi empresa →</a>
+        </article>
+
+        <!-- CARD B: RESIDENCIA -->
+        <article class="card service-detail reveal">
+          <span class="badge badge-accent">RESIDENCIA FISCAL</span>
+          <h3>Tu residencia paraguaya. Gestionada de principio a fin.</h3>
+          <p>Con residencia paraguaya pagás impuestos solo por lo que ganás en Paraguay. Lo que ganás afuera, tuyo. Sin declaraciones complejas, sin presión fiscal.</p>
+          <p>El trámite lo hago yo. Vos viajás una vez, firmás lo que hay que firmar, y en pocas semanas tenés cédula paraguaya y residencia fiscal activa.</p>
+          <p><strong>Sin sorpresas. Sin costos ocultos. Con alguien que habla tu idioma al lado.</strong></p>
+
+          <div class="option-block">
+            <div class="option-head">
+              <h4>Estándar</h4>
+              <div class="option-price">USD 2.000</div>
+            </div>
+            <ul class="check-list compact">
+              <li>Residencia Temporal completa</li>
+              <li>Cédula de Identidad paraguaya</li>
+              <li>RUC + Certificado de Residencia Fiscal</li>
+              <li>Representación legal completa</li>
+              <li>Plazo: 4–6 meses</li>
+              <li>50% al inicio · 50% al aprobarse</li>
+            </ul>
+          </div>
+
+          <div class="option-block highlighted">
+            <div class="option-head">
+              <h4>Express <span class="recommended-tag">MÁS ELEGIDO</span></h4>
+              <div class="option-price">USD 3.200</div>
+            </div>
+            <ul class="check-list compact">
+              <li>Todo lo del estándar</li>
+              <li>Cédula tramitada simultáneamente</li>
+              <li>Gestión prioritaria</li>
+              <li>Plazo: 45–50 días</li>
+              <li>Ideal si necesitás operar rápido</li>
+            </ul>
+          </div>
+
+          <div class="comparison">
+            <div class="comp-line strike">Solo en tasas + abogado + traductores + errores: <strong>~USD 4.000</strong> · 6–8 meses</div>
+            <div class="comp-line good">Con Valentina: <strong>desde USD 2.000</strong> · Todo coordinado ✓</div>
+          </div>
+
+          <a href="#calendly" class="btn btn-primary btn-block">Quiero mi residencia →</a>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ===================== LLEGÁS A PARAGUAY ===================== -->
-  <section class="section section-llegada" id="llegada">
+  <!-- SERVICIO 3: PAQUETE -->
+  <section class="section section-blue">
     <div class="container">
-      <div class="llegada-wrapper">
-        <h2 class="llegada-title fade-in">
-          Llegás a Paraguay y no conocés a nadie.<br />
-          <em>Yo me encargo.</em>
-        </h2>
+      <div class="section-head center reveal">
+        <span class="badge badge-on-blue">LA SOLUCIÓN COMPLETA</span>
+        <h2 class="white">Llegás a Paraguay.<br/>Todo ya está resuelto.</h2>
+        <p class="lead lead-light">
+          Para quien quiere hacer las cosas bien, de una sola vez, sin perder tiempo ni plata en errores.
+        </p>
+      </div>
 
-        <div class="llegada-body">
-          <p class="fade-in">Imaginá esto: bajás del avión y ya hay alguien esperándote. Te llevan directo a un departamento ejecutivo premium en la mejor zona de Asunción. Sin buscar, sin improvisar, sin perder un segundo.</p>
+      <div class="package-intro reveal">
+        <p>Este paquete es para la persona que ya decidió. Que no quiere andar coordinando abogados, gestores, contadores y inmobiliarias por separado. Que quiere llegar a Paraguay y encontrar todo funcionando.</p>
+        <p><strong>Una sola llamada conmigo. Un plan. Un interlocutor. Todo resuelto.</strong></p>
+      </div>
 
-          <p class="fade-in">Al día siguiente ya estás sentado frente a los mejores abogados y contadores del mercado — los mismos que usan los inversores que llevan años acá. Residencia fiscal, empresa, cuenta bancaria — todo se activa en los primeros días.</p>
-
-          <p class="fade-in">Después salimos a recorrer. Te muestro las zonas que están explotando, los proyectos que todavía no salieron al mercado, los terrenos que en dos años van a valer el doble. Todo lo que yo ya filtré para vos.</p>
-
-          <p class="fade-in">¿Necesitás construir? Te presento a los arquitectos y constructoras con los que ya trabajo. ¿Compraste un departamento y querés ponerlo a producir? Te gestiono todo: amoblamiento completo, diseño, alta en Airbnb, operación y mantenimiento. Vos no tocás nada — tu propiedad trabaja desde el día uno.</p>
-
-          <p class="fade-in">En menos de una semana tenés todo encaminado. Lo que a otros les toma meses de dar vueltas sin saber a quién llamar.</p>
-
-          <div class="llegada-highlight fade-in">
-            <p>Todo esto por <strong>USD 500</strong>. Tu alojamiento ejecutivo lo gestionamos a través de Corporate Stays con tarifas preferenciales exclusivas que solo consiguen mis clientes.</p>
-            <p class="llegada-price">Esto no es un gasto. Es la diferencia entre entrar a Paraguay como turista o entrar como inversor.</p>
+      <div class="grid-2">
+        <article class="card package-card reveal">
+          <h3>Completo · Estándar</h3>
+          <p class="package-sub">Todo resuelto en 4–6 meses</p>
+          <ul class="check-list">
+            <li>Consultoría privada de diagnóstico (30 min)</li>
+            <li>Hoja de ruta personalizada paso a paso</li>
+            <li>Constitución EAS completa (empresa en 10 días)</li>
+            <li>RUC activo listo para operar</li>
+            <li>Residencia Temporal + Cédula paraguaya</li>
+            <li>Alojamiento ejecutivo coordinado con Corporate Stays</li>
+            <li>Reuniones con abogados y contadores de confianza</li>
+            <li>Recorrido de zonas y proyectos de inversión</li>
+            <li>Acompañamiento por WhatsApp durante todo el proceso</li>
+            <li>Contador incluido el primer mes</li>
+          </ul>
+          <div class="price-block">
+            <div class="price">USD 3.200</div>
           </div>
-        </div>
+          <a href="#calendly" class="btn btn-outline btn-block">Quiero el paquete estándar</a>
+        </article>
 
-        <div class="llegada-cta fade-in">
-          <a href="https://wa.me/595994763352?text=Hola%20Valentina%2C%20quiero%20mi%20hoja%20de%20ruta%20en%20Paraguay." class="btn btn-primary" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i> Quiero mi hoja de ruta
-          </a>
-        </div>
+        <article class="card package-card featured reveal">
+          <span class="recommended-tag big">RECOMENDADO</span>
+          <h3>Completo · Express</h3>
+          <p class="package-sub">Todo operativo en 60 días</p>
+          <ul class="check-list">
+            <li>Todo lo del paquete estándar</li>
+            <li>Residencia en 45–50 días (no 4–6 meses)</li>
+            <li>Empresa activa en 10 días</li>
+            <li>Acceso a proyectos off-market antes de salir al mercado</li>
+            <li>Precios <em>friends &amp; family</em> — descuentos de hasta USD 5.000 en inmuebles</li>
+            <li>Gestión prioritaria de principio a fin</li>
+          </ul>
+          <div class="price-block">
+            <div class="price">USD 4.500</div>
+          </div>
+          <a href="#calendly" class="btn btn-white btn-block">Quiero el paquete express →</a>
+        </article>
+      </div>
+
+      <p class="package-target reveal">
+        Para europeos, argentinos y brasileros que quieren salir de la presión fiscal, abrir estructura legal eficiente y posicionarse en Paraguay antes de que el mercado madure del todo.
+      </p>
+
+      <div class="comparison comparison-on-blue reveal">
+        <div class="comp-line strike">Hacerlo solo contratando todo por separado: <strong>~USD 8.500</strong> · 8–12 meses</div>
+        <div class="comp-line good">Con Valentina Paraguay: <strong>USD 4.500</strong> · Todo operativo en 60 días ✓</div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CATEGORÍAS DE INVERSIÓN ===================== -->
-  <section class="section section-light" id="inversiones">
+  <!-- WEBINARS -->
+  <section class="section" id="webinars">
+    <div class="container narrow">
+      <div class="section-head center reveal">
+        <span class="badge">PRÓXIMAMENTE</span>
+        <h2>Webinars exclusivos.<br/>Lo que no encontrás en Google.</h2>
+        <p class="lead">
+          Próximamente lanzo webinars privados sobre inversión, residencia fiscal y estructura legal en Paraguay. Gratis. Cupos limitados a 50 personas.
+        </p>
+      </div>
+
+      <form class="card form-card reveal" onsubmit="event.preventDefault(); alert('¡Listo! Te avisamos antes que nadie.');">
+        <p class="form-intro">No hay fecha confirmada aún. Pero si te anotás ahora, recibís la invitación antes que nadie — y tenés cupo garantizado.</p>
+        <div class="form-grid">
+          <div class="form-field">
+            <label>Nombre completo</label>
+            <input type="text" required placeholder="Tu nombre" />
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-field">
+            <label>País</label>
+            <input type="text" required placeholder="Tu país" />
+          </div>
+          <div class="form-field">
+            <label>¿Qué tema te interesa?</label>
+            <select required>
+              <option value="">Elegí un tema</option>
+              <option>Inversión inmobiliaria</option>
+              <option>Residencia fiscal</option>
+              <option>Empresa en Paraguay</option>
+              <option>Todo</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Anotarme a la lista de espera →</button>
+        <p class="form-note">Cupos limitados. Lista de espera ya abierta.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- POR QUÉ PARAGUAY -->
+  <section class="section section-soft">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Oportunidades</p>
-        <h2 class="section-title">Categorías de Inversión</h2>
-        <p class="section-subtitle">Paraguay ofrece un ecosistema diversificado de oportunidades para el inversor global.</p>
+      <div class="section-head center reveal">
+        <span class="badge">EL CONTEXTO</span>
+        <h2>Por qué Paraguay.<br/>Y por qué ahora.</h2>
       </div>
 
-      <div class="categories-grid">
-        <div class="category-card fade-in">
-          <div class="category-img category-img-1">
-            <div class="category-overlay">
-              <h3>Residencial</h3>
-              <p>Departamentos y casas en Asunción, Luque, San Bernardino y ciudades del Este.</p>
-              <span class="category-yield">Yield: 6–10% anual</span>
-            </div>
-          </div>
+      <div class="grid-3">
+        <div class="card icon-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+          <h4>Solo 10% de impuesto a la renta</h4>
+          <p>El más bajo de la región. Y solo pagás por lo que generás en Paraguay. Lo que ganás afuera, no se toca.</p>
         </div>
 
-        <div class="category-card fade-in">
-          <div class="category-img category-img-2">
-            <div class="category-overlay">
-              <h3>Comercial y Oficinas</h3>
-              <p>Locales comerciales, oficinas corporativas y espacios de coworking en zonas prime.</p>
-              <span class="category-yield">Yield: 7–12% anual</span>
-            </div>
-          </div>
+        <div class="card icon-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21V12h6v9"/></svg>
+          <h4>Extranjeros con los mismos derechos</h4>
+          <p>Podés comprar inmuebles, abrir empresa y vivir en Paraguay exactamente igual que un local. Sin restricciones.</p>
         </div>
 
-        <div class="category-card fade-in">
-          <div class="category-img category-img-3">
-            <div class="category-overlay">
-              <h3>Tierra y Agro</h3>
-              <p>Campos productivos, agronegocios y proyectos forestales con retornos consistentes.</p>
-              <span class="category-yield">Yield: 8–15% anual</span>
-            </div>
-          </div>
+        <div class="card icon-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>
+          <h4>Mercado inmobiliario en crecimiento</h4>
+          <p>Rentabilidad estimada de +10% anual. Asunción es una de las capitales con mayor potencial de valorización de la región.</p>
         </div>
 
-        <div class="category-card fade-in">
-          <div class="category-img category-img-4">
-            <div class="category-overlay">
-              <h3>Desarrollos en Pozo</h3>
-              <p>Inversión en proyectos en construcción con potencial de plusvalía desde el día uno.</p>
-              <span class="category-yield">Ganancia: 20–40% total</span>
-            </div>
-          </div>
+        <div class="card icon-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2.5"/><line x1="14" y1="10" x2="18" y2="10"/><line x1="14" y1="14" x2="18" y2="14"/></svg>
+          <h4>Residencia sin inversión mínima</h4>
+          <p>A diferencia de Portugal, España o UAE, Paraguay no te pide invertir USD 200K para darte residencia. Solo documentos y una visita.</p>
         </div>
-      </div>
 
-      <div class="categories-cta">
-        <p>¿Listo para explorar el mercado paraguayo?</p>
-        <a href="#contacto" class="btn btn-primary">Solicitar análisis personalizado</a>
+        <div class="card icon-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
+          <h4>Estabilidad real</h4>
+          <p>Moneda estable, deuda pública baja, inflación controlada. Lo que muchos países de la región no pueden decir.</p>
+        </div>
+
+        <div class="card icon-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18"/><path d="M12 3a14 14 0 000 18"/></svg>
+          <h4>Puerta de entrada al MERCOSUR</h4>
+          <p>Con cédula paraguaya tenés libertad de movimiento en Argentina, Brasil, Uruguay y toda la región.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== SOBRE MÍ ===================== -->
-  <section class="section section-about" id="sobre-mi">
+  <!-- COMPARATIVA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="badge">LOS NÚMEROS</span>
+        <h2>Paraguay vs otros destinos.<br/>Compará vos mismo.</h2>
+      </div>
+
+      <div class="table-wrapper reveal">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>País</th>
+              <th>Impuesto renta</th>
+              <th>Inversión mínima</th>
+              <th>Tiempo residencia</th>
+              <th>Permanencia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-highlight">
+              <td data-label="País"><strong>🇵🇾 Paraguay</strong></td>
+              <td data-label="Impuesto renta">10%</td>
+              <td data-label="Inversión mínima">USD 0</td>
+              <td data-label="Tiempo residencia">45–90 días</td>
+              <td data-label="Permanencia">No requerida</td>
+            </tr>
+            <tr>
+              <td data-label="País">🇵🇹 Portugal</td>
+              <td data-label="Impuesto renta">14–48%</td>
+              <td data-label="Inversión mínima">EUR 500.000</td>
+              <td data-label="Tiempo residencia">6–12 meses</td>
+              <td data-label="Permanencia">7 días/año</td>
+            </tr>
+            <tr>
+              <td data-label="País">🇺🇾 Uruguay</td>
+              <td data-label="Impuesto renta">12%</td>
+              <td data-label="Inversión mínima">USD 380.000</td>
+              <td data-label="Tiempo residencia">6–12 meses</td>
+              <td data-label="Permanencia">6 meses/año</td>
+            </tr>
+            <tr>
+              <td data-label="País">🇦🇪 UAE</td>
+              <td data-label="Impuesto renta">0%</td>
+              <td data-label="Inversión mínima">USD 200.000</td>
+              <td data-label="Tiempo residencia">30–60 días</td>
+              <td data-label="Permanencia">1 día/año</td>
+            </tr>
+            <tr>
+              <td data-label="País">🇵🇦 Panamá</td>
+              <td data-label="Impuesto renta">25%</td>
+              <td data-label="Inversión mínima">USD 200.000</td>
+              <td data-label="Tiempo residencia">3–6 meses</td>
+              <td data-label="Permanencia">1 día/2 años</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Fuente: datos estimados 2026. Para casos específicos, consultá directamente.</p>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section section-soft" id="sobre-mi">
     <div class="container">
       <div class="about-grid">
-        <div class="about-image-col fade-in">
-          <div class="about-image-frame">
-            <img
-              src="IMG_4791.jpeg"
-              alt="Valentina Paraguay"
-              class="about-photo"
-            />
-            <div class="about-badge-float">
-              <i class="fas fa-globe-americas"></i>
-              <span>Inversores de<br />+10 países</span>
+        <div class="about-photo reveal">
+          <img src="IMG_4791.jpeg" alt="Valentina, asesora de inversiones en Paraguay" />
+        </div>
+        <div class="about-text reveal">
+          <span class="badge">QUIÉN SOY</span>
+          <h2>Soy Valentina.</h2>
+          <p>Paraguaya. Vivo en Asunción.</p>
+          <p>Trabajo con europeos, argentinos y brasileños que buscan en Paraguay lo que sus países ya no les dan: estabilidad, eficiencia fiscal y oportunidades reales de inversión.</p>
+          <p>Conozco el mercado desde adentro porque crecí acá. Tengo los contactos que un extranjero tarda años en conseguir. Y hablo tu idioma — literalmente.</p>
+          <p><strong>Mi trabajo es hacer simple lo que parece complicado. Una sola llamada conmigo y tenés claridad total.</strong></p>
+
+          <div class="about-stats">
+            <div>
+              <div class="stat-number-small">5</div>
+              <div class="stat-label-small">idiomas (ES · PT · IT · FR · EN)</div>
+            </div>
+            <div>
+              <div class="stat-number-small">+20</div>
+              <div class="stat-label-small">proyectos en cartera</div>
+            </div>
+            <div>
+              <div class="stat-number-small">100%</div>
+              <div class="stat-label-small">personalizado</div>
             </div>
           </div>
-        </div>
-        <div class="about-text-col fade-in">
-          <p class="section-eyebrow">Quién soy</p>
-          <h2 class="section-title about-title">Valentina Paraguay</h2>
-          <p class="about-intro">
-            Soy paraguaya, me apasionan los negocios y probablemente llegaste aquí porque viste mi contenido.
-          </p>
-          <p class="about-body">
-            Comparto información real sobre Paraguay con un enfoque que no vas a encontrar en los típicos videos genéricos que circulan por ahí — lo que yo te cuento viene de estar adentro del mercado, no de repetir lo que dice Google.
-          </p>
-          <p class="about-body">
-            Desde muy joven entendí algo que la mayoría aprende tarde: en Paraguay, lo que sabés importa menos que a quién conocés.
-          </p>
-          <p class="about-body">
-            Competí como deportista a nivel internacional. Eso me enseñó disciplina, me abrió puertas en distintos países y me mostró cómo funcionan otras economías. Pero siempre volví con la misma certeza: Paraguay tiene números que ningún otro país de la región puede ofrecer.
-          </p>
-          <p class="about-body">
-            Hoy soy el primer contacto de inversores de más de 10 países que quieren entrar a este mercado. Mi red existe porque nací y crecí aquí — conozco a los desarrolladores, abogados, contadores y banqueros de primera mano. Mis clientes acceden a precios friends &amp; family y a conexiones que no están en ningún portal.
-          </p>
-          <p class="about-body">
-            No trabajo con cualquiera. Trabajo con inversores serios que entienden que en un mercado de contactos, entrar solo es el error más caro que se puede cometer.
-          </p>
-          <p class="about-intro" style="margin-top:8px;">
-            Si estás aquí, ya sabés que Paraguay es el lugar. La pregunta es con quién entrás.
-          </p>
-          <a href="#contacto" class="btn btn-primary">Hablar con Valentina</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== FAQ ===================== -->
-  <section class="section section-light" id="faq">
+  <!-- CASOS REALES -->
+  <section class="section">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Preguntas frecuentes</p>
-        <h2 class="section-title">FAQ</h2>
-        <p class="section-subtitle">Respuestas a las preguntas más comunes sobre invertir y establecerse en Paraguay.</p>
+      <div class="section-head center reveal">
+        <span class="badge">RESULTADOS</span>
+        <h2>Casos reales.<br/>Números concretos.</h2>
       </div>
 
-      <div class="faq-list">
-        <div class="faq-item fade-in">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Cuánto se tarda en obtener la residencia permanente en Paraguay?</span>
-            <i class="fas fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-answer">
-            <p>El proceso típico toma entre 3 y 6 meses desde la presentación completa de documentos. Paraguay ofrece una de las residencias permanentes más ágiles de América Latina, sin requisito mínimo de inversión o estadía. Con los documentos correctamente apostillados y un gestor especializado, el proceso puede acelerarse considerablemente.</p>
-          </div>
-        </div>
+      <div class="grid-3">
+        <article class="card case-card reveal">
+          <div class="case-flag">🇦🇷</div>
+          <h4>Empresario argentino, 45 años</h4>
+          <p>"Quería salir del peso y de la presión impositiva. Constituyó su EAS, obtuvo residencia fiscal y compró su primer inmueble en Asunción."</p>
+          <div class="case-result"><strong>Resultado:</strong> Ahorro estimado de USD 80.000/año en impuestos.</div>
+          <div class="case-time"><strong>Tiempo:</strong> 60 días</div>
+        </article>
 
-        <div class="faq-item fade-in">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Los extranjeros pueden comprar propiedades en Paraguay?</span>
-            <i class="fas fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-answer">
-            <p>Sí, completamente. Paraguay no tiene restricciones para que extranjeros adquieran bienes inmuebles en el país. El proceso es similar al de cualquier ciudadano paraguayo, requiriendo únicamente el RUC (número fiscal) y un documento de identidad válido. Las transacciones pueden realizarse en USD sin ningún tipo de control de cambios.</p>
-          </div>
-        </div>
+        <article class="card case-card reveal">
+          <div class="case-flag">🇪🇸</div>
+          <h4>Familia española, 4 personas</h4>
+          <p>"Buscaban un Plan B real. Hoy tienen residencia paraguaya los 4, los chicos en colegio internacional y la empresa del padre operando desde Asunción."</p>
+          <div class="case-result"><strong>Resultado:</strong> Relocalización completa coordinada de principio a fin.</div>
+          <div class="case-time"><strong>Tiempo:</strong> 90 días</div>
+        </article>
 
-        <div class="faq-item fade-in">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Cómo funciona el sistema fiscal territorial de Paraguay?</span>
-            <i class="fas fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-answer">
-            <p>Paraguay aplica el principio de renta territorial: solo tributan los ingresos generados dentro del país. Si usted es residente paraguayo pero obtiene rentas en Argentina, España, Estados Unidos u otro país, esas rentas NO están sujetas a impuestos en Paraguay. El impuesto a la renta local es del 10% flat, uno de los más bajos de la región.</p>
-          </div>
-        </div>
+        <article class="card case-card reveal">
+          <div class="case-flag">🇧🇷</div>
+          <h4>Inversor brasileño</h4>
+          <p>"Invirtió en 2 unidades off-market antes de que salieran al mercado general. Accedió a precio friends &amp; family."</p>
+          <div class="case-result"><strong>Resultado:</strong> ROI proyectado del 14% anual.</div>
+          <div class="case-time"><strong>Tiempo:</strong> 45 días</div>
+        </article>
+      </div>
 
-        <div class="faq-item fade-in">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Qué capital mínimo se recomienda para invertir en inmobiliario?</span>
-            <i class="fas fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-answer">
-            <p>Depende del tipo de inversión. Para departamentos en pozo o pre-construcción, es posible comenzar desde USD 30,000–50,000. Para propiedades residenciales terminadas en Asunción, los precios arrancan desde USD 60,000–80,000. Para proyectos comerciales o terrenos agroproductivos, el rango habitual es USD 100,000 en adelante. Evaluamos cada caso de manera personalizada.</p>
-          </div>
-        </div>
+      <p class="table-note">Casos reales. Datos modificados para proteger la privacidad.</p>
+    </div>
+  </section>
 
-        <div class="faq-item fade-in">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Puedo abrir una cuenta bancaria en Paraguay sin residencia?</span>
-            <i class="fas fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-answer">
-            <p>Sí, es posible abrir cuentas bancarias como no residente en varios bancos paraguayos, aunque el proceso es más sencillo con residencia. Como parte de la Hoja de Ruta, facilito la apertura de cuentas en bancos privados seleccionados que trabajan con clientes internacionales, con servicios en inglés y español.</p>
-          </div>
-        </div>
+  <!-- FAQ -->
+  <section class="section section-soft" id="faq">
+    <div class="container narrow">
+      <div class="section-head center reveal">
+        <span class="badge">DUDAS FRECUENTES</span>
+        <h2>Las preguntas que<br/>probablemente tenés ahora.</h2>
+      </div>
 
-        <div class="faq-item fade-in">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Cuáles son las zonas más prometedoras para invertir hoy?</span>
-            <i class="fas fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-answer">
-            <p>En Asunción: Villa Morra, Carmelitas, Mburucuyá y el eje de Aviadores del Chaco concentran la mayor demanda corporativa y residencial de alto standing. En el interior: Ciudad del Este (zona franca), Encarnación (turismo y residencias) y San Bernardino (segunda residencia) ofrecen oportunidades con yields muy atractivos. Escribime para recibir un análisis de zona personalizado según tu presupuesto.</p>
-          </div>
-        </div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>¿Por qué USD 50 si otros ofrecen consultoría gratis?</summary>
+          <p>Porque mi consultoría no es una llamada de ventas. Es un diagnóstico real. Te llevás un análisis de tu situación, recomendación concreta y mapa de próximos pasos. Vale mucho más que USD 50. Y si avanzás con algún servicio, esos USD 50 se descuentan del total.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Qué pasa si después de la consultoría decido no avanzar?</summary>
+          <p>Ningún problema. La consultoría existe para que tomes la mejor decisión, no para presionarte. Si Paraguay no es para vos en este momento, mejor saberlo antes de gastar plata. Te vas con claridad.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Cómo sé que no es estafa?</summary>
+          <p>Soy paraguaya, vivo en Asunción y trabajo con mi nombre real. Mi RUC es 5711868-0. Trabajo con abogados y contadores registrados que vas a conocer en persona. Los pagos son en dos partes: 50% al inicio, 50% al obtener el resultado. Nunca el 100% por adelantado.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Hablás mi idioma?</summary>
+          <p>Sí. Atiendo en español, portugués, italiano, francés e inglés.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Tengo que viajar a Paraguay?</summary>
+          <p>Para residencia y empresa, sí — hay trámites que requieren presencia. Pero coordino todo para que sea UN solo viaje corto. La consultoría inicial es 100% online.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Cuánto tarda todo?</summary>
+          <p>Empresa (EAS): ~10 días. Residencia express: 45–50 días. Paquete completo express: todo operativo en 60 días. Residencia estándar: 4–6 meses.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Y si no puedo viajar todavía?</summary>
+          <p>Empezamos con la consultoría online. Avanzamos con lo que se puede hacer remoto (como la EAS). Coordinamos el viaje cuando estés listo.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Trabajás solo con paraguayos o también con extranjeros?</summary>
+          <p>Trabajo casi exclusivamente con extranjeros. Es mi especialidad. Europeos, argentinos y brasileños principalmente.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CONTACTO ===================== -->
-  <section class="section section-dark section-contact" id="contacto">
+  <!-- CALENDLY -->
+  <section class="section" id="calendly">
     <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info fade-in">
-          <p class="section-eyebrow section-eyebrow-gold">Hablemos</p>
-          <h2 class="section-title contact-title">¿Listo para dar el primer paso?</h2>
-          <p class="contact-intro">Cuénteme su situación y objetivos. En 24 horas le propongo un plan de acción personalizado sin coste ni compromiso.</p>
+      <div class="section-head center reveal">
+        <span class="badge">AGENDÁ</span>
+        <h2>Primera llamada.<br/>Gratis. Sin compromiso.</h2>
+        <p class="lead">15 minutos para ver si puedo ayudarte. Sin presión. Sin venta. Solo claridad.</p>
+      </div>
 
-          <div class="contact-methods">
-            <a href="https://wa.me/595994763352?text=Hola%20Valentina%2C%20quiero%20conocer%20más%20sobre%20tus%20servicios." class="contact-method" target="_blank" rel="noopener">
-              <div class="contact-method-icon">
-                <i class="fab fa-whatsapp"></i>
-              </div>
-              <div class="contact-method-text">
-                <strong>WhatsApp</strong>
-                <span>+595 994 763 352</span>
-              </div>
-            </a>
-            <a href="mailto:info@valentinaparaguay.com" class="contact-method">
-              <div class="contact-method-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-method-text">
-                <strong>Email</strong>
-                <span>info@valentinaparaguay.com</span>
-              </div>
-            </a>
-            <div class="contact-method contact-method-no-link">
-              <div class="contact-method-icon">
-                <i class="fas fa-clock"></i>
-              </div>
-              <div class="contact-method-text">
-                <strong>Horario</strong>
-                <span>Lun–Vie, 9:00 – 18:00 (PY)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-col fade-in">
-          <form class="contact-form" id="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Su nombre" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" placeholder="su@email.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="telefono">WhatsApp / Teléfono</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11..." />
-            </div>
-            <div class="form-group">
-              <label for="interes">¿En qué servicio está interesado?</label>
-              <select id="interes" name="interes">
-                <option value="">Seleccionar servicio</option>
-                <option value="inmobiliario">Inversiones Inmobiliarias</option>
-                <option value="fiscal">Estructura Patrimonial y Fiscal</option>
-                <option value="hoja-ruta">Hoja de Ruta en Paraguay</option>
-                <option value="corporate">Alojamiento Corporate Stays</option>
-                <option value="todo">Todo lo anterior</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="mensaje">Cuénteme más *</label>
-              <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿Cuál es su situación actual y qué objetivos tiene en Paraguay?" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              <span>Enviar mensaje</span>
-              <i class="fas fa-paper-plane"></i>
-            </button>
-            <p class="form-disclaimer">Al enviar acepta nuestra política de privacidad. Respondo en menos de 24 horas hábiles.</p>
-          </form>
-        </div>
+      <div class="calendly-wrap reveal">
+        <iframe src="https://calendly.com/info-valentinaparaguay/consulta-discovery" width="100%" height="700" frameborder="0" style="border:none;"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <span class="footer-logo">Valentina Paraguay</span>
-            <p class="footer-tagline">Una sola conexión. Todo Paraguay.</p>
-            <p class="footer-desc">Asesoría experta para inversores globales que quieren acceder a las oportunidades del mercado paraguayo con seguridad y eficiencia.</p>
-            <div class="footer-social">
-              <a href="https://wa.me/595994763352" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="mailto:info@valentinaparaguay.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-
-          <div class="footer-nav-col">
-            <h4>Servicios</h4>
-            <ul>
-              <li><a href="#servicios">Hoja de Ruta en Paraguay</a></li>
-              <li><a href="#servicios">Inversiones Inmobiliarias</a></li>
-              <li><a href="#servicios">Estructura Patrimonial y Fiscal</a></li>
-              <li><a href="#servicios">Alojamiento Corporate Stays</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-nav-col">
-            <h4>Explorar</h4>
-            <ul>
-              <li><a href="#por-que-paraguay">Por qué Paraguay</a></li>
-              <li><a href="#inversiones">Categorías de inversión</a></li>
-              <li><a href="#sobre-mi">Sobre mí</a></li>
-              <li><a href="#faq">Preguntas frecuentes</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-contact-col">
-            <h4>Contacto</h4>
-            <ul class="footer-contact-list">
-              <li>
-                <i class="fab fa-whatsapp"></i>
-                <a href="https://wa.me/595994763352" target="_blank" rel="noopener">+595 994 763 352</a>
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:info@valentinaparaguay.com">info@valentinaparaguay.com</a>
-              </li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Asunción, Paraguay</span>
-              </li>
-            </ul>
-          </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Valentina Paraguay</div>
+          <p>Una sola conexión. Todo Paraguay.</p>
+          <p class="footer-ruc">RUC: 5711868-0</p>
+        </div>
+        <div>
+          <h5>Contacto</h5>
+          <ul>
+            <li>📱 <a href="https://wa.me/595994763352">+595 994 763 352</a></li>
+            <li>✉️ <a href="mailto:info@valentinaparaguay.com">info@valentinaparaguay.com</a></li>
+            <li>🌐 <a href="https://valentinaparaguay.com">valentinaparaguay.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#servicios">Consultoría USD 50</a></li>
+            <li><a href="#servicios">Empresa (EAS)</a></li>
+            <li><a href="#servicios">Residencia</a></li>
+            <li><a href="#servicios">Paquete Todo-en-Uno</a></li>
+            <li><a href="#webinars">Webinars</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Redes</h5>
+          <ul>
+            <li><a href="https://instagram.com/valentinaparaguay">Instagram: @valentinaparaguay</a></li>
+            <li>LinkedIn (próximamente)</li>
+            <li>YouTube (próximamente)</li>
+            <li>Telegram (próximamente)</li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; <span id="footer-year"></span> Valentina Paraguay. Todos los derechos reservados.</p>
-        <p class="footer-legal">La información provista tiene carácter informativo y no constituye asesoramiento jurídico ni financiero.</p>
+      <hr/>
+      <div class="footer-bottom">
+        © 2026 Valentina Paraguay · <a href="#">Política de Privacidad</a> · <a href="#">Términos y Condiciones</a>
       </div>
     </div>
   </footer>
 
-  <!-- ===================== WHATSAPP FLOTANTE ===================== -->
-  <a href="https://wa.me/595994763352?text=Hola%20Valentina%2C%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat por WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-tooltip">¿Hablamos por WhatsApp?</span>
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/595994763352?text=Hola%20Vale%2C%20quiero%20información%20sobre%20tus%20servicios" class="wa-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-1-.5-2.1-1-3.1-2.2-.8-.9-1.3-2-1.5-2.4-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 5 4.4 2.5 1 3 .8 3.5.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.1-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+    </svg>
   </a>
 
-  <!-- Form Success Modal -->
-  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-label="Mensaje enviado">
-    <div class="modal">
-      <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
-      <h3>¡Mensaje recibido!</h3>
-      <p>Gracias por contactarme. Le responderé en menos de 24 horas hábiles.</p>
-      <button class="btn btn-primary" id="modal-close">Cerrar</button>
-    </div>
-  </div>
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
 
-  <script src="js/main.js"></script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+    }));
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    const counters = document.querySelectorAll('.counter');
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = +el.dataset.target;
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 40));
+        const tick = () => {
+          current += step;
+          if (current >= target) { el.textContent = target; return; }
+          el.textContent = current;
+          requestAnimationFrame(tick);
+        };
+        tick();
+        cio.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(c => cio.observe(c));
+  </script>
 </body>
 </html>
