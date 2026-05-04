@@ -16,41 +16,37 @@
   <link rel="stylesheet" href="valentina-paraguay-styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { overflow-x: hidden; width: 100%; max-width: 100%; }
     .hero-globe {
       background: #0A0A0A;
       min-height: 100vh;
       width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding: 0 60px;
-      gap: 40px;
-      overflow: hidden;
+      padding: 60px 32px;
+      text-align: center;
     }
-    .hero-globe-text { color: #fff; }
+    .hero-globe-text { color: #fff; max-width: 600px; width: 100%; }
     .hero-globe-text .section-label { color: rgba(255,255,255,0.45); }
-    .hero-globe-text h1 { color: #fff; font-size: clamp(36px, 4vw, 68px); }
+    .hero-globe-text h1 { color: #fff; font-size: clamp(36px, 8vw, 72px); }
     .hero-globe-text p { color: rgba(255,255,255,0.65); font-size: 17px; margin-bottom: 40px; line-height: 1.7; }
     .hero-globe-text .btn-primary { background: #fff; color: #0A0A0A; border-color: #fff; }
     .hero-globe-text .btn-primary:hover { background: transparent; color: #fff; }
     .hero-globe-text .btn-secondary { border-color: rgba(255,255,255,0.4); color: #fff; }
     .hero-globe-text .btn-secondary:hover { background: #fff; color: #0A0A0A; }
-    .globe-container { display: flex; align-items: center; justify-content: center; height: 500px; }
-    #globe-canvas { cursor: grab; }
+    .globe-container { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 400px; height: 350px; margin-top: 40px; }
+    #globe-canvas { cursor: grab; max-width: 100%; }
     #globe-canvas:active { cursor: grabbing; }
     .globe-hint { text-align: center; color: rgba(255,255,255,0.25); font-size: 11px; margin-top: 8px; letter-spacing: 0.1em; }
-    @media (max-width: 900px) {
+    @media (min-width: 900px) {
       .hero-globe {
-        grid-template-columns: 1fr;
-        padding: 80px 24px 40px;
-        min-height: auto;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
+        padding: 0 80px;
+        gap: 60px;
       }
-      .hero-globe-text p { font-size: 16px; }
-      .hero-globe-text div { justify-content: center; }
-      .globe-container { height: 280px; order: -1; }
+      .globe-container { height: 500px; max-width: 500px; margin-top: 0; }
     }
   </style>
 </head>
@@ -62,16 +58,27 @@
 </div>
 
 <!-- NAVEGACIÓN -->
-<nav>
-  <a href="#inicio" class="nav-logo">Valentina Paraguay</a>
-  <div style="display:flex;gap:32px;align-items:center;">
-    <a href="#servicios">Servicios</a>
-    <a href="#webinars">Webinars</a>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#faq">FAQ</a>
-    <a href="https://calendly.com/valentinaparaguay/consulta-discovery" target="_blank" class="btn btn-primary" style="padding:10px 24px;">Agendar llamada</a>
+<nav style="padding:16px 32px;">
+  <a href="#inicio" class="nav-logo" style="font-size:16px;white-space:nowrap;">Valentina Paraguay</a>
+  <div style="display:flex;gap:24px;align-items:center;flex-wrap:nowrap;">
+    <a href="#servicios" style="display:none;">Servicios</a>
+    <a href="#webinars" style="display:none;">Webinars</a>
+    <a href="#sobre-mi" style="display:none;">Sobre mí</a>
+    <a href="#faq" style="display:none;">FAQ</a>
+    <a href="https://calendly.com/valentinaparaguay/consulta-discovery" target="_blank" class="btn btn-primary" style="padding:10px 20px;font-size:11px;white-space:nowrap;">Agendar llamada</a>
   </div>
 </nav>
+
+<style>
+@media (min-width: 768px) {
+  nav a[href="#servicios"],
+  nav a[href="#webinars"],
+  nav a[href="#sobre-mi"],
+  nav a[href="#faq"] {
+    display: inline !important;
+  }
+}
+</style>
 
 <!-- HERO CON GLOBO -->
 <div id="inicio" class="hero-globe">
