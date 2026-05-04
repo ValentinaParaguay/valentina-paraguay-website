@@ -14,6 +14,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="valentina-paraguay-styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <style>
+    .hero-globe {
+      background: #0A0A0A;
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 0 80px;
+      gap: 60px;
+    }
+    .hero-globe-text { color: #fff; }
+    .hero-globe-text .section-label { color: rgba(255,255,255,0.45); }
+    .hero-globe-text h1 { color: #fff; font-size: clamp(42px, 5vw, 72px); }
+    .hero-globe-text p { color: rgba(255,255,255,0.65); font-size: 18px; margin-bottom: 40px; line-height: 1.7; }
+    .hero-globe-text .btn-primary { background: #fff; color: #0A0A0A; border-color: #fff; }
+    .hero-globe-text .btn-primary:hover { background: transparent; color: #fff; }
+    .hero-globe-text .btn-secondary { border-color: rgba(255,255,255,0.4); color: #fff; }
+    .hero-globe-text .btn-secondary:hover { background: #fff; color: #0A0A0A; }
+    .globe-container { display: flex; align-items: center; justify-content: center; height: 600px; }
+    #globe-canvas { cursor: grab; border-radius: 50%; }
+    #globe-canvas:active { cursor: grabbing; }
+    .globe-hint { text-align: center; color: rgba(255,255,255,0.3); font-size: 12px; margin-top: 12px; letter-spacing: 0.1em; }
+    @media (max-width: 768px) {
+      .hero-globe { grid-template-columns: 1fr; padding: 60px 24px; min-height: auto; }
+      .globe-container { height: 300px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -34,21 +62,25 @@
   </div>
 </nav>
 
-<!-- HERO -->
-<section id="inicio" style="padding:120px 60px;max-width:1200px;margin:0 auto;">
-  <div style="max-width:720px;">
-    <span class="section-label">🇵🇾 La conexión que necesitás en Paraguay</span>
+<!-- HERO CON GLOBO -->
+<div id="inicio" class="hero-globe">
+  <div class="hero-globe-text">
+    <span class="section-label">La conexión que necesitás en Paraguay</span>
     <h1>Una sola conexión.<br>Todo Paraguay.</h1>
-    <p style="font-size:20px;color:#444;margin-bottom:40px;line-height:1.6;">
-      Residencia · Empresa · Inversión inmobiliaria<br>
-      Gestionado de principio a fin, desde donde estés.
-    </p>
+    <p>Residencia · Empresa · Inversión inmobiliaria<br>Gestionado de principio a fin, desde donde estés.</p>
     <div style="display:flex;gap:16px;flex-wrap:wrap;">
-      <a href="https://calendly.com/valentinaparaguay/consulta-discovery" target="_blank" class="btn btn-primary">Agendar consultoría - USD 50</a>
+      <a href="https://calendly.com/valentinaparaguay/consulta-discovery" target="_blank" class="btn btn-primary">Agendar consultoría — USD 50</a>
       <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
     </div>
   </div>
-</section>
+  <div>
+    <div class="globe-container">
+      <canvas id="globe-canvas" width="500" height="500"></canvas>
+    </div>
+    <p class="globe-hint">Arrastrá para rotar · Scroll para zoom</p>
+  </div>
+</div>
+<script src="hero-globe.js"></script>
 
 <!-- CONTADORES -->
 <div class="stats-grid">
