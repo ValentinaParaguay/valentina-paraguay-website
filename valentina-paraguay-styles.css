@@ -1,0 +1,124 @@
+/* ============================================
+   VALENTINA PARAGUAY - Estilos Actualizados
+   Inspirado en Elliman: limpio, blanco, negro
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #0A0A0A; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+:root { --negro: #0A0A0A; --blanco: #FFFFFF; --gris-suave: #FAFAFA; --gris-borde: #E8E8E8; --gris-texto: #666666; }
+
+nav, header nav { background-color: #FFFFFF; border-bottom: 1px solid var(--gris-borde); padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+
+nav a { color: var(--negro); text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: opacity 0.2s; }
+nav a:hover { opacity: 0.5; }
+.nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; letter-spacing: 0.02em; }
+
+.banner-urgencia { background-color: var(--negro); color: var(--blanco); text-align: center; padding: 10px 20px; font-size: 13px; letter-spacing: 0.05em; }
+.banner-urgencia a { color: var(--blanco); text-decoration: underline; }
+
+.hero, #inicio { padding: 120px 60px; max-width: 1200px; margin: 0 auto; }
+.hero h1, #inicio h1 { font-family: 'Playfair Display', serif; font-size: clamp(42px, 5vw, 68px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 24px; }
+.hero p, #inicio p { font-size: 18px; color: var(--gris-texto); margin-bottom: 40px; line-height: 1.7; }
+
+.stats-grid, .counters { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin: 60px 0; padding: 60px; background-color: var(--gris-suave); border-top: 1px solid var(--gris-borde); border-bottom: 1px solid var(--gris-borde); }
+.stat-item { text-align: center; }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; display: block; line-height: 1; margin-bottom: 8px; }
+.stat-label { font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gris-texto); }
+
+.btn, button, a.btn { display: inline-block; padding: 14px 32px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: all 0.25s ease; border-radius: 0; }
+.btn-primary { background-color: var(--negro); color: var(--blanco); border: 2px solid var(--negro); }
+.btn-primary:hover { background-color: var(--blanco); color: var(--negro); }
+.btn-secondary { background-color: transparent; color: var(--negro); border: 2px solid var(--negro); }
+.btn-secondary:hover { background-color: var(--negro); color: var(--blanco); }
+
+section { padding: 100px 60px; max-width: 1200px; margin: 0 auto; }
+
+.section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gris-texto); margin-bottom: 16px; display: block; }
+
+h2 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 24px; }
+h3 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; margin-bottom: 16px; }
+
+.servicios-grid, .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2px; margin-top: 60px; }
+.servicio-card { background: var(--blanco); border: 1px solid var(--gris-borde); padding: 48px 40px; transition: border-color 0.2s; }
+.servicio-card:hover { border-color: var(--negro); }
+.servicio-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gris-texto); margin-bottom: 20px; display: block; }
+.servicio-precio { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; margin: 24px 0 8px; }
+.servicio-card ul { list-style: none; margin: 24px 0 32px; }
+.servicio-card ul li { padding: 10px 0; border-bottom: 1px solid var(--gris-borde); font-size: 14px; color: var(--gris-texto); }
+.servicio-card ul li:last-child { border-bottom: none; }
+
+.badge-recomendado { display: inline-block; background: var(--negro); color: var(--blanco); font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 12px; margin-bottom: 16px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 40px; font-size: 15px; }
+thead tr { border-bottom: 2px solid var(--negro); }
+th { padding: 16px 20px; text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+td { padding: 16px 20px; border-bottom: 1px solid var(--gris-borde); color: var(--gris-texto); }
+tr:first-child td { color: var(--negro); font-weight: 600; }
+
+#sobre-mi { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+#sobre-mi img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; filter: grayscale(15%); }
+.sobre-mi-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--gris-borde); }
+.sobre-mi-stat span:first-child { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; display: block; }
+.sobre-mi-stat span:last-child { font-size: 13px; color: var(--gris-texto); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.casos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 60px; }
+.caso-card { background: var(--blanco); border: 1px solid var(--gris-borde); padding: 40px; }
+.caso-pais { font-size: 32px; margin-bottom: 16px; display: block; }
+.caso-resultado { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; margin: 16px 0 8px; }
+.caso-tiempo { font-size: 13px; color: var(--gris-texto); letter-spacing: 0.05em; }
+
+#faq details { border-bottom: 1px solid var(--gris-borde); padding: 24px 0; }
+#faq summary { font-weight: 600; font-size: 17px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary::after { content: '+'; font-size: 24px; font-weight: 300; transition: transform 0.2s; }
+#faq details[open] summary::after { transform: rotate(45deg); }
+#faq details p { margin-top: 16px; color: var(--gris-texto); line-height: 1.7; }
+
+.lista-privada { background: var(--negro); color: var(--blanco); padding: 80px 60px; text-align: center; }
+.lista-privada h2 { color: var(--blanco); margin-bottom: 16px; }
+.lista-privada p { color: rgba(255,255,255,0.65); margin-bottom: 40px; font-size: 17px; }
+.lista-privada form { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; max-width: 600px; margin: 0 auto; }
+.lista-privada input, .lista-privada select { flex: 1; min-width: 180px; padding: 14px 20px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); color: var(--blanco); font-size: 14px; font-family: 'Inter', sans-serif; outline: none; }
+.lista-privada input::placeholder { color: rgba(255,255,255,0.4); }
+.lista-privada button { background: var(--blanco); color: var(--negro); border: none; padding: 14px 32px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; }
+
+.calendly-section { padding: 80px 60px; text-align: center; background: var(--gris-suave); }
+.calendly-section h2 { margin-bottom: 8px; }
+.calendly-section p { color: var(--gris-texto); margin-bottom: 48px; font-size: 17px; }
+.calendly-inline-widget { max-width: 900px; margin: 0 auto; border: 1px solid var(--gris-borde); }
+
+footer { background-color: var(--negro); color: rgba(255,255,255,0.65); padding: 60px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; max-width: 1200px; margin: 0 auto 48px; }
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--blanco); font-weight: 700; margin-bottom: 16px; display: block; }
+.footer-tagline { font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+.footer-ruc { font-size: 12px; letter-spacing: 0.05em; color: rgba(255,255,255,0.4); }
+.footer-col h4 { color: var(--blanco); font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 20px; }
+.footer-col a, .footer-col p { display: block; color: rgba(255,255,255,0.55); text-decoration: none; font-size: 14px; margin-bottom: 10px; transition: color 0.2s; }
+.footer-col a:hover { color: var(--blanco); }
+.footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(255,255,255,0.35); }
+.footer-bottom a { color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+.footer-bottom a:hover { color: var(--blanco); }
+
+@media (max-width: 768px) {
+  nav, header nav { padding: 16px 24px; }
+  .hero, #inicio { grid-template-columns: 1fr; padding: 60px 24px; gap: 40px; }
+  section { padding: 60px 24px; }
+  .stats-grid, .counters { grid-template-columns: 1fr; padding: 40px 24px; gap: 32px; }
+  .servicios-grid { grid-template-columns: 1fr; }
+  .casos-grid { grid-template-columns: 1fr; }
+  #sobre-mi { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .lista-privada { padding: 60px 24px; }
+  .calendly-section { padding: 60px 24px; }
+  .sobre-mi-stats { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .sobre-mi-stats { grid-template-columns: 1fr; }
+}
