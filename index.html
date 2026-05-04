@@ -16,30 +16,40 @@
   <link rel="stylesheet" href="valentina-paraguay-styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
   <style>
+    * { box-sizing: border-box; }
     .hero-globe {
       background: #0A0A0A;
       min-height: 100vh;
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-      padding: 0 80px;
-      gap: 60px;
+      padding: 0 60px;
+      gap: 40px;
+      overflow: hidden;
     }
     .hero-globe-text { color: #fff; }
     .hero-globe-text .section-label { color: rgba(255,255,255,0.45); }
-    .hero-globe-text h1 { color: #fff; font-size: clamp(42px, 5vw, 72px); }
-    .hero-globe-text p { color: rgba(255,255,255,0.65); font-size: 18px; margin-bottom: 40px; line-height: 1.7; }
+    .hero-globe-text h1 { color: #fff; font-size: clamp(36px, 4vw, 68px); }
+    .hero-globe-text p { color: rgba(255,255,255,0.65); font-size: 17px; margin-bottom: 40px; line-height: 1.7; }
     .hero-globe-text .btn-primary { background: #fff; color: #0A0A0A; border-color: #fff; }
     .hero-globe-text .btn-primary:hover { background: transparent; color: #fff; }
     .hero-globe-text .btn-secondary { border-color: rgba(255,255,255,0.4); color: #fff; }
     .hero-globe-text .btn-secondary:hover { background: #fff; color: #0A0A0A; }
-    .globe-container { display: flex; align-items: center; justify-content: center; height: 600px; }
-    #globe-canvas { cursor: grab; border-radius: 50%; }
+    .globe-container { display: flex; align-items: center; justify-content: center; height: 500px; }
+    #globe-canvas { cursor: grab; }
     #globe-canvas:active { cursor: grabbing; }
-    .globe-hint { text-align: center; color: rgba(255,255,255,0.3); font-size: 12px; margin-top: 12px; letter-spacing: 0.1em; }
-    @media (max-width: 768px) {
-      .hero-globe { grid-template-columns: 1fr; padding: 60px 24px; min-height: auto; }
-      .globe-container { height: 300px; }
+    .globe-hint { text-align: center; color: rgba(255,255,255,0.25); font-size: 11px; margin-top: 8px; letter-spacing: 0.1em; }
+    @media (max-width: 900px) {
+      .hero-globe {
+        grid-template-columns: 1fr;
+        padding: 80px 24px 40px;
+        min-height: auto;
+        text-align: center;
+      }
+      .hero-globe-text p { font-size: 16px; }
+      .hero-globe-text div { justify-content: center; }
+      .globe-container { height: 280px; order: -1; }
     }
   </style>
 </head>
